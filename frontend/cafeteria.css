@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #694a34;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: Arial, sans-serif;
+  color: #321e14;
+}
+
+.contenedor {
+  width: 675px;
+  max-width: 95%;
+  background-color: #fff8f0;
+  border-radius: 14px;
+  padding: 40px 45px;
+  margin: 80px auto;
+}
+
+h1 {
+  text-align: center;
+  font-family: Georgia, serif;
+  font-size: 34px;
+  color: #3b2418;
+  margin: 0 0 35px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 7px;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #d8ccc2;
+  border-radius: 5px;
+  background-color: white;
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+
+.fila {
+  display: flex;
+  gap: 35px;
+}
+
+.campo {
+  flex: 1;
+  min-width: 0;
+}
+
+.tamanos {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0 20px;
+}
+
+.tamanos label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #694a34;
+}
+
+.llevar {
+  margin-bottom: 20px;
+}
+
+.llevar label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+textarea {
+  height: 82px;
+  resize: vertical;
+}
+
+.botones {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 5px;
+}
+
+button {
+  padding: 12px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+  min-width: 155px;
+}
+
+.limpiar {
+  background-color: transparent;
+  border: 1px solid #694a34;
+  color: #321e14;
+}
+
+.registrar {
+  background-color: #694a34;
+  border: 1px solid #694a34;
+  color: white;
+}
+
+.limpiar:hover {
+  background-color: #eee0d3;
+}
+
+.registrar:hover {
+  background-color: #4e3322;
+}
+
+#resultado {
+  margin-top: 20px;
+  font-size: 13px;
+}
+
+#resultado h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+#resultado p {
+  margin-bottom: 12px;
+}
+
+@media (max-width: 600px) {
+  .contenedor {
+    padding: 25px 20px;
+    margin: 25px auto;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  .fila {
+    gap: 15px;
+  }
+
+  .tamanos {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .botones {
+    flex-wrap: wrap;
+  }
+}
